@@ -1,30 +1,34 @@
 package javazaawansowana.zadania.prezentacje.slajd84;
 
+
 import java.util.Objects;
 
 public class Samochod {
 
-    protected String marka ="";
-    protected String kolor="";
-    protected String model="";
+    protected final String marka;
+    protected String kolor;
+    protected int rocznik;
     protected double predkosc;
     protected boolean swiatla;
 
 
+    public Samochod(String marka, String kolor, int rocznik, double predkosc, boolean swiatla) {
+        this.marka = marka;
+        this.kolor = kolor;
+        this.rocznik = rocznik;
+        this.predkosc = predkosc;
+        this.swiatla = swiatla;
+    }
 
     @Override
     public String toString() {
-        return "Samochod{predkosc: " + predkosc + ", swiatla: " + swiatla + "}";
-    }
-
-    private int tylkoMoje;
-
-    public int getTylkoMoje() {
-        return tylkoMoje;
-    }
-
-    public void setTylkoMoje(int tylkoMoje) {
-        this.tylkoMoje = tylkoMoje;
+        return "Samochod{" +
+                "marka='" + marka + '\'' +
+                ", kolor='" + kolor + '\'' +
+                ", rocznik=" + rocznik +
+                ", predkosc=" + predkosc +
+                ", swiatla=" + swiatla +
+                '}';
     }
 
     public void przyspiesz() {
@@ -42,5 +46,19 @@ public class Samochod {
 
     protected boolean czySwiatlaWlaczone() {
         return swiatla;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Samochod samochod = (Samochod) o;
+        return rocznik == samochod.rocznik && marka.equals(samochod.marka) && kolor.equals(samochod.kolor);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(marka, kolor, rocznik);
     }
 }

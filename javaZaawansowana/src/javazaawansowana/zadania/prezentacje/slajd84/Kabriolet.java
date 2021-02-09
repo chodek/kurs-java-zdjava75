@@ -4,10 +4,14 @@ public class Kabriolet extends Samochod {
 
     private boolean czyDachSchowany;
 
+    public Kabriolet(String marka, String kolor, int rocznik, double predkosc, boolean swiatla, boolean czyDachSchowany) {
+        super(marka, kolor, rocznik, predkosc, swiatla);
+        this.czyDachSchowany = czyDachSchowany;
+    }
 
     @Override
     public String toString() {
-        return "Kabrolet{predkosc: " + predkosc + ", swiatla: " + swiatla + "}";
+        return super.toString() + " z rozsuwanym dachem";
     }
 
     @Override
