@@ -3,8 +3,7 @@ package javazaawansowana.pokaz.abstrakcja;
 
 
 
-public  class Pies extends Zwierze{
-
+public class Pies extends Zwierze{
 
     @Override
     public void dajGlos() {

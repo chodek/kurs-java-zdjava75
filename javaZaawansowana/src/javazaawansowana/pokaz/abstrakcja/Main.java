@@ -7,5 +7,9 @@ public class Main {
 
          Zwierze zmiennaZwierze = new Zwierze();
         */
+
+
+        Zwierze piesBurek = new Pies();
+        Pies pies = new Pies();
     }
 }

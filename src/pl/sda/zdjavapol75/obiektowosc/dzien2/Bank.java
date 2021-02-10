@@ -4,6 +4,8 @@ public class Bank {
 
     private String nazwaBanku;
     private String[] tablicaOgloszen;
+
+
     private KontoBankowe[] kontaWBanku;
 
     public Bank(String nazwaBanku, KontoBankowe[] kontaWBanku) {
