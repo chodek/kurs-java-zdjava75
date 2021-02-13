@@ -1,4 +1,4 @@
-package javazaawansowana.zadania.prezentacje.slajd97;
+package javazaawansowana.zadania.prezentacje.wstepDoProgramowaniaObiektowego.slajd97;
 
 public class Kolo {
 

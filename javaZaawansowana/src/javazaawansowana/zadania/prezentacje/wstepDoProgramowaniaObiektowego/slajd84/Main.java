@@ -1,4 +1,4 @@
-package javazaawansowana.zadania.prezentacje.slajd84;
+package javazaawansowana.zadania.prezentacje.wstepDoProgramowaniaObiektowego.slajd84;
 
 public class Main {
 

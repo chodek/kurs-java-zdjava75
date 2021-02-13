@@ -2,6 +2,7 @@ package javazaawansowana.pokaz.polimorfizm.figury;
 
 public class Kwadrat extends Prostokat {
 
+    int wiek = 5;
 
     public Kwadrat(double bokA) {
         super(bokA, bokA);

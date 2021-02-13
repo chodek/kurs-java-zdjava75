@@ -1,4 +1,4 @@
-package javazaawansowana.zadania.prezentacje.slajd126;
+package javazaawansowana.zadania.prezentacje.wstepDoProgramowaniaObiektowego.slajd126;
 
 public abstract class Czlowiek {
 

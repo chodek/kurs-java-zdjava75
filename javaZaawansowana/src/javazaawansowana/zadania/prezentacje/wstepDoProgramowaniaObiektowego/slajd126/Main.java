@@ -1,4 +1,4 @@
-package javazaawansowana.zadania.prezentacje.slajd126;
+package javazaawansowana.zadania.prezentacje.wstepDoProgramowaniaObiektowego.slajd126;
 
 public class Main {
 
@@ -15,6 +15,7 @@ public class Main {
         for (Egzemplarz egzemplarz : bibliotekaMiejska.szukajPoTytule("bajki nie dla dzieci")) {
             System.out.println(egzemplarz);
         }
+
 
 
     }
