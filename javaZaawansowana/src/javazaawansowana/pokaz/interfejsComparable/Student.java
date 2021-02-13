@@ -2,7 +2,7 @@ package javazaawansowana.pokaz.interfejsComparable;
 
 import java.util.Objects;
 
-public class Student implements Comparable<Student> {
+public class Student implements Comparable {
 
     String imie;
     double sredniaOcen;
@@ -67,8 +67,10 @@ public class Student implements Comparable<Student> {
                 '}';
     }
 
+
+
     @Override
-    public int compareTo(Student o) {
+    public int compareTo(Object o) {
         return Integer.compare(imie.length(), ((Student)o).imie.length());
     }
 }
