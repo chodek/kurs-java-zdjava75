@@ -10,6 +10,8 @@ public class Main {
         IElektryczny iElektryczny = new SilnikElektryczny();
 
 
+
+
         IElektryczny[] tablicaUrzadzenElektrycznych = new IElektryczny[]{silnikElektryczny}; //tutaj moglyby byc jeszcze hulajnoga, piekarnik itp w tablicy
 
 

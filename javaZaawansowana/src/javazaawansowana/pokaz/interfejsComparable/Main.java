@@ -1,6 +1,7 @@
 package javazaawansowana.pokaz.interfejsComparable;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Main {
 
@@ -38,6 +39,26 @@ public class Main {
         for (Student s : tablicaStudenciakow) {
             System.out.println(s);
         }
+
+
+
+
+        Arrays.sort(tablicaStudenciakow, new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+               return Double.compare(o1.sredniaOcen, o2.sredniaOcen);
+            }
+        });
+
+
+
+
+        System.out.println("Po posortowaniu klasa anonimowa");
+        for (Student s : tablicaStudenciakow) {
+            System.out.println(s);
+        }
+
+        Arrays.sort(tablicaStudenciakow);
 
 
     }
