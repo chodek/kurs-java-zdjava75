@@ -18,9 +18,11 @@ public class Main {
        integerList.add(1);
        integerList1.add(1);
 
+/*
 
        integerList.remove(1);
        integerList1.remove(1);
+*/
 
 
        System.out.println(integerList.indexOf(1));

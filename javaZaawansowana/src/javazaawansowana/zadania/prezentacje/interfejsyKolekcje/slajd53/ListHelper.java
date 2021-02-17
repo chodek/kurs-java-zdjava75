@@ -26,11 +26,12 @@ public class ListHelper {
 
     }
 
-    public static <E> void removeDuplicates(List<E> listWithDuplicates) {
+    public static <E> void removeDuplicates(List<E> listWithDuplicates, boolean remainOrder) {
 
         for (int i = 0; i < listWithDuplicates.size(); i++) {
             if (listWithDuplicates.indexOf(listWithDuplicates.get(i)) != listWithDuplicates.lastIndexOf(listWithDuplicates.get(i)))  {
                 listWithDuplicates.remove(listWithDuplicates.lastIndexOf(listWithDuplicates.get(i)));
+                i--; // Jezeli zostal znaleziony i usuniety duplikat, to zmniejszam i, zeby jeszcze raz sprawdzic, czy to slowo nie ma dalszych duplikwatow
             }
         }
         /* ta petla robilaby to samo, gdyby nie problem z jednoczesnym przegldaniem i usuwaniem elementow z Listy

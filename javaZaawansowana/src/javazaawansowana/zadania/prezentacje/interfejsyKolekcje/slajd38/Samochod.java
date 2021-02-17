@@ -1,12 +1,15 @@
 package javazaawansowana.zadania.prezentacje.interfejsyKolekcje.slajd38;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class Samochod {
 
-    String marka;
-    String model;
+
+    String marka; // V o l v o = 283
+    String model; // X6 = 58
     String kolor;
+    int rokProdukcji = 2000;
 
     public Samochod(String marka, String model, String kolor) {
         this.marka = marka;
@@ -23,7 +26,7 @@ public class Samochod {
                 '}';
     }
 
-    public void zmienKolor(String kolor){
+    public void zmienKolor(String kolor) {
         this.kolor = kolor;
     }
 
@@ -35,5 +38,8 @@ public class Samochod {
         return Objects.equals(marka, samochod.marka) && Objects.equals(model, samochod.model) && Objects.equals(kolor, samochod.kolor);
     }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(marka, model, kolor);
+    }
 }

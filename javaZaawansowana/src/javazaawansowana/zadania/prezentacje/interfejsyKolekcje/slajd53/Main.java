@@ -27,7 +27,7 @@ public class Main {
 
         ListHelper.showDuplicates(stringList);
 
-        ListHelper.removeDuplicates(stringList);
+        ListHelper.removeDuplicates(stringList, false);
 
         System.out.println(stringList);
 

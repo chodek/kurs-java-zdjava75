@@ -1,27 +1,28 @@
-import java.time.LocalDate;
-import java.time.Period;
-import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(aktualnyCzas(pobranaData()));
-
-
+        Candidate perfectCandidate = new Candidate(3, "remote, Poland");
+        perfectCandidate.approachPerfectCandidate();
     }
 
-    public static LocalDate pobranaData() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj date następnych zajęc w formacie YYYY-MM-DD:");
-        String dataZajec = scanner.nextLine();
-        return LocalDate.parse(dataZajec);
+    public static class Candidate {
+
+        private final int minYearsOfExp;
+        private final String location;
+
+        public Candidate(int a, String b) {
+            minYearsOfExp = a;
+            location = b;
+        }
+
+        public void approachPerfectCandidate() {
+            System.out.println(
+                    "Dzień dobry Panie Marcinie!");
+            System.out.println(
+                    "Poszukuję obecnie Senior Java Developera.Forma zatrudnienia to UoP lub B2B.Czy byłby Pan zainteresowany"
+                            + " ? Chętnie opowiem więcej podczas rozmowy telefonicznej. Pozdrawiam, Kamila");
+        }
+
     }
-
-    public static Period aktualnyCzas(LocalDate dataKolejnegoSpotkania) {
-        LocalDate obecnyCzas = LocalDate.now();
-        return Period.between(obecnyCzas, dataKolejnegoSpotkania);
-    }
-
-
-
 }
+
