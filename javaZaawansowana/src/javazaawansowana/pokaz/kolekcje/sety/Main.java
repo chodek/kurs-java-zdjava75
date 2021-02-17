@@ -1,5 +1,6 @@
 package javazaawansowana.pokaz.kolekcje.sety;
 
+import com.sun.source.tree.Tree;
 import javazaawansowana.zadania.prezentacje.interfejsyKolekcje.slajd38.BMW;
 import javazaawansowana.zadania.prezentacje.interfejsyKolekcje.slajd38.Samochod;
 
@@ -11,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Set<String> stringSet = new HashSet<>();
+        Set<String> stringSet = new TreeSet<>();
 
         System.out.println(stringSet.add("Ala"));
         System.out.println(stringSet.add("ma"));
@@ -36,6 +37,9 @@ public class Main {
         System.out.println(samochodSet.contains(new BMW("X5", "Czarne")));
 
 
+        for (String element : stringSet) {
+            System.out.println(element);
+        }
 
 
 

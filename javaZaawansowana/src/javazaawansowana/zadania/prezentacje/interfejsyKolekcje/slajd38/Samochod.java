@@ -3,7 +3,7 @@ package javazaawansowana.zadania.prezentacje.interfejsyKolekcje.slajd38;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Samochod {
+public class Samochod implements Comparable {
 
 
     String marka; // V o l v o = 283
@@ -41,5 +41,10 @@ public class Samochod {
     @Override
     public int hashCode() {
         return Objects.hash(marka, model, kolor);
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
