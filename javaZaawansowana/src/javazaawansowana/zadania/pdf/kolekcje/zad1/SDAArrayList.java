@@ -1,20 +1,31 @@
 package javazaawansowana.zadania.pdf.kolekcje.zad1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class SDAArrayList<T> {
 
-    Object[] elements;
+    T[] elements;
+    /* jezeli potrzeba wiecej pol, zrob je */
 
+    public SDAArrayList() {
+        elements = (T[]) new Object[10];
+    }
+
+    public SDAArrayList(int initialSize) {
+        /*  tutaj kod   */
+    }
 
     public boolean add(T elementToAdd){
-
+        /*  tutaj kod   */
     }
 
     public T remove(int index){
-
+        /*  tutaj kod   */
     }
 
+    public T get(int index){
+        /*  tutaj kod   */
+    }
 
+    public void display(){
+        /*  tutaj kod   */
+    }
 }
