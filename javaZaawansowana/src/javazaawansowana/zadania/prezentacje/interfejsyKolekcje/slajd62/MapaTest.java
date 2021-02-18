@@ -4,7 +4,10 @@ import java.util.*;
 
 public class MapaTest {
 
+
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String panTadeusz = scanner.nextLine();
 
         Map<String, Integer> mapaWieku = new TreeMap<>();
         mapaWieku.put("Darek", 50);
@@ -26,7 +29,7 @@ public class MapaTest {
         /*
          tutaj moja niewydajna proba ulozenia mapy wedlug wartosci:
 
-         List<Integer> zbiorWartosci = new ArrayList<>(mapaWieku.values());
+        List<Integer> zbiorWartosci = new ArrayList<>(mapaWieku.values());
         zbiorWartosci.sort(null);
         System.out.println(zbiorWartosci);
         Map<String, Integer> sortedMapaWieku = new LinkedHashMap<>();
