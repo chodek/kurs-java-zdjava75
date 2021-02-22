@@ -8,6 +8,8 @@ public class Main {
         Prostokat prostokat = kwadrat;
         Figura figura = prostokat;
 
+        kwadrat.setBok(10);
+        kwadrat.setBok(-110);
 
 
 
