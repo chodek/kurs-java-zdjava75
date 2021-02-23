@@ -39,6 +39,7 @@ public class Main {
         bufferedReader = new BufferedReader(new FileReader("/tmp/sda.txt"));
 
 
+
         // tutaj dojdziemy jak kod z sekcji try nie rzuci wyjatku
     }
 
