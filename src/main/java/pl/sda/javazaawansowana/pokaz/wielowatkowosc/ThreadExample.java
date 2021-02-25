@@ -1,5 +1,8 @@
 package pl.sda.javazaawansowana.pokaz.wielowatkowosc;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class ThreadExample {
 
     public static void main(String[] args) {
@@ -35,6 +38,9 @@ public class ThreadExample {
 
         System.out.println("Hello world from Main Thread");
         System.out.println(Thread.currentThread().getId()+ " - id of main thread ");
+
+
+
 
     }
 }
