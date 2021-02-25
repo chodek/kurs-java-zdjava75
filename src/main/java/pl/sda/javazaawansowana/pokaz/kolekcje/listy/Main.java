@@ -1,6 +1,7 @@
 package pl.sda.javazaawansowana.pokaz.kolekcje.listy;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -31,6 +32,12 @@ public class Main {
 
 
 
+       integerList.sort(new Comparator<Integer>() {
+           @Override
+           public int compare(Integer o1, Integer o2) {
+               return 0;
+           }
+       });
 
 
     }

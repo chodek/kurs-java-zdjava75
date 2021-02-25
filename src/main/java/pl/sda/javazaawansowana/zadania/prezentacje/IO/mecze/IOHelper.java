@@ -7,14 +7,16 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Collection;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class IOHelper {
 
+
     public static void saveToFile(String fileName, Collection<?> data) throws IOException {
-        Path path = Paths.get(fileName);
-        /*
+         /*
             TODO spytac uzytkownika czy chce nadpisac plik i wykonac odpowiednie operacje
         */
+        Path path = Paths.get(fileName);
         while (Files.exists(path)) {
             System.out.println("Taki plik juz istnieje! Podaj inna nazwe!");
             fileName = Main.getFileName();
