@@ -8,6 +8,10 @@ public class Main {
 
         System.out.println(sumujTabliceRekurencyjnie(tablicaLiczb));
 
+        System.out.println(silnia(14));
+
+        System.out.println(silniaR(20));
+
     }
 
 
@@ -31,7 +35,7 @@ public class Main {
         return sum;
     }
 
-    public static int sumujTabliceRekurencyjnie(int[] tablica){
+    public static int sumujTabliceRekurencyjnie(int[] tablica) {
         return sumujTabliceRekurencyjnie(tablica, 0);
     }
 
@@ -43,4 +47,29 @@ public class Main {
         }
     }
 
+    public static int silnia(int a) {
+        int toDoCzegoSieDomnaza = 1;
+        for (int i = 1; i <= a; i++) {
+            toDoCzegoSieDomnaza *= i;
+        }
+        return toDoCzegoSieDomnaza;
+    }
+
+    /*
+    5! = 5 * 4 * 3 * 2
+
+    5! = 5 * 4!
+    5! = 5 * (4 * 3!)
+    5! = 5 * (4 * (3 * 2!)
+    5! = 5 * (4 * (3 * ( 2 * 1!)
+    5! = 5 * (4 * (3 * ( 2 * 1 )
+
+     */
+
+    public static long silniaR(int a) {
+        if (a < 2) {
+            return 1;
+        }
+        return a * silniaR(a - 1);
+    }
 }
