@@ -1,4 +1,4 @@
-package pl.sda.javazaawansowana.pokaz.funkcyjne;
+package pl.sda.javazaawansowana.pokaz.funkcyjne.function;
 
 import java.util.Arrays;
 import java.util.List;
