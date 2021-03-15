@@ -16,7 +16,14 @@ public class Main {
 
 
 
+
        integerList.add(1);
+       integerList1.add(1);
+       integerList1.add(1);
+       integerList1.add(1);
+       integerList1.add(1);
+       integerList1.add(1);
+       integerList1.add(1);
        integerList1.add(1);
 
 /*
@@ -29,7 +36,9 @@ public class Main {
        System.out.println(integerList.indexOf(1));
        System.out.println(integerList.lastIndexOf(1));
 
-
+        for (Integer integer : integerList1) {
+            integerList1.remove(1);
+        }
 
 
        integerList.sort(new Comparator<Integer>() {

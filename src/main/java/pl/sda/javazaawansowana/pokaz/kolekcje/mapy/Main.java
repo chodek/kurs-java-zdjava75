@@ -1,9 +1,6 @@
 package pl.sda.javazaawansowana.pokaz.kolekcje.mapy;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +14,10 @@ public class Main {
                 new Book("Akcja 2", Genre.ACTION)
         };
 
-        Map<Genre, List<String>> booksMap = new HashMap<>();
+
+
+
+        Map<Genre, List<String>> booksMap = new LinkedHashMap<>();
         for (Book book : booksTable) {
             if (booksMap.containsKey(book.getGatunek())) {
                 booksMap.get(book.getGatunek()).add(book.getTytul());
@@ -27,6 +27,10 @@ public class Main {
                 booksMap.put(book.getGatunek(), listaTytulow);
             }
         }
+
+
+
+
 
         System.out.println(booksMap);
 

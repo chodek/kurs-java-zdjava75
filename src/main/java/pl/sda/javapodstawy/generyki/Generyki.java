@@ -1,9 +1,14 @@
-package pl.sda.javapodstawy;
+package pl.sda.javapodstawy.generyki;
+
+import pl.sda.javazaawansowana.zadania.prezentacje.wstepDoProgramowaniaObiektowego.slajd126.Autor;
 
 public class Generyki {
 
     public static void main(String[] args) {
         System.out.println(abs(-10));
+
+        Box<String> stringBox = new Box<>();
+        stringBox.setItem("asdas");
     }
 
 

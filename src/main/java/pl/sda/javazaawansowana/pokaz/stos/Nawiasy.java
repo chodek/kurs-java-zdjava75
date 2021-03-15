@@ -2,6 +2,7 @@ package pl.sda.javazaawansowana.pokaz.stos;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.Queue;
 
 public class Nawiasy {
 
@@ -13,6 +14,7 @@ public class Nawiasy {
 
     public static boolean balancedParenthesis(String input) {
         Deque<Character> stack = new ArrayDeque<>();
+
 
         for (char c : input.toCharArray()) {
             if (c == '(') {

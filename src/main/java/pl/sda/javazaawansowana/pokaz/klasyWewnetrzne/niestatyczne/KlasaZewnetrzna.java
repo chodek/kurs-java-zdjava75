@@ -1,9 +1,10 @@
 package pl.sda.javazaawansowana.pokaz.klasyWewnetrzne.niestatyczne;
 
 public class KlasaZewnetrzna {
-    private String polePrywatne;
 
-    public class KlasaWewnetrzna{
+    private String polePrywatneKlasyZewnetrznej;
+
+    public  class KlasaWewnetrzna{
 
     }
 

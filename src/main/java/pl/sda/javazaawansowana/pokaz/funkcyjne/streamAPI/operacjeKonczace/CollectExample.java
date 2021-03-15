@@ -1,6 +1,7 @@
 package pl.sda.javazaawansowana.pokaz.funkcyjne.streamAPI.operacjeKonczace;
 
 import java.util.List;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -19,5 +20,10 @@ public class CollectExample {
                 )
         );
 
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextDouble();
+
     }
+
+
 }

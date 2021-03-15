@@ -4,6 +4,7 @@ import pl.sda.javazaawansowana.zadania.prezentacje.interfejsyKolekcje.slajd38.BM
 import pl.sda.javazaawansowana.zadania.prezentacje.interfejsyKolekcje.slajd38.Samochod;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -11,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Set<String> stringSet = new TreeSet<>();
+        Set<String> stringSet = new LinkedHashSet<>();
 
         System.out.println(stringSet.add("Ala"));
         System.out.println(stringSet.add("ma"));
